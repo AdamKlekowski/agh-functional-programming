@@ -23,6 +23,6 @@ map' :: (a -> b) -> [a] -> [b]
 map' _ [] = []
 map' f (x:xs) = f x : map' f xs
 
-plusplus :: [a] -> [a] -> [a]
-plusplus [] y = y
-plusplus (x:xs) y = x : plusplus xs y
+(+++) :: [a] -> [a] -> [a]
+(+++) [] y = y
+(+++) (x:xs) y = x : xs +++ y
