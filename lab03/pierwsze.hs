@@ -1,9 +1,4 @@
 pierwsze :: [Int] -> [Int]
+-- funkcja znajdujące w podanej liście wszystkie liczby pierwsze
 
-pierwsze = \input -> filter (\el -> isPrime el) input
-
-isPrime :: Int -> Bool
-isPrime 1 = False
-isPrime 2 = True
-isPrime n | (length [x | x <- [2..(n-1)], mod n x == 0]) > 0 = False
-	  | otherwise = True
+pierwsze = \input -> filter (\el -> el > 1 && (length [x | x <- [2..(el-1)], mod el x == 0]) == 0) input
