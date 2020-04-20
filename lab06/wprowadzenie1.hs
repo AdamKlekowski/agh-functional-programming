@@ -18,5 +18,3 @@ main :: IO ()
 main = do
   runTestTT testlist
   return ()
-
-

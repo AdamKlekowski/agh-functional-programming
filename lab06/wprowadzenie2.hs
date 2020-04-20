@@ -1,6 +1,5 @@
 import Test.HUnit
- 
- 
+
 fact 1 = 1
 fact n = n * fact (n - 1)
  
@@ -15,5 +14,3 @@ main :: IO ()
 main = do
   runTestTT testlist
   return ()
-
-
