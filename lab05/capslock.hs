@@ -1,3 +1,7 @@
+{-
+Napisz program wczytujący plik i zapisujący jego zawartość w wersji CAPSLOCK.
+-}
+
 import System.IO
 import Data.Char
  

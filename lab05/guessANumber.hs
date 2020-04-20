@@ -1,3 +1,7 @@
+{-
+Napisz grę „Guess a number”, gdzie system losuje losową liczbę od 0-10, a użytkownik ma 3 próby odgadnięcia tej liczby, za każdym razem otrzymując podpowiedź, że wpisana liczba była mniejsza, lub większa od szukanej. Aby wygenerować losową liczbę.
+-}
+
 import System.Random
 
 main = do

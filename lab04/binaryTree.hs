@@ -52,6 +52,19 @@ nsum Empty = 0
 nsum (Node r t1 t2) = r + nsum t1 + nsum t2
 
 --remove (usuwanie elementu)*
-remove :: (Ord a) => (Tree a) -> a -> (Tree a)
+remove :: (Ord a) => Tree a -> a -> Tree a
+remove (Node v t1 t2) x
+        | v < x = Node v t1 (remove t2 x)
+        | v > x = Node v (remove t1 x) t2
+remove (Node v Empty t2) x = t2
+remove (Node v t1 Empty) x = t1
+remove (Node v t1 t2) x = insert' t1 t2
 remove Empty _ = Empty
--- TODO
+
+insert' :: (Ord a) => Tree a -> Tree a -> Tree a
+insert' x Empty = x
+insert' Empty x = x
+insert' (Node v t1 t2) (Node x x1 x2) 
+        | v == x = Node v t1 t2
+        | v < x = Node v t1 (insert' t2 (Node x x1 x2))
+        | v > x = Node v (insert' t1 (Node x x1 x2)) t2
