@@ -1,5 +1,6 @@
 {-
-Napisz program czytający plik i zapisujący w osobnym pliku słowa, które nie występują w '/usr/share/dict/words'. Sprawdzanie nie powinno być case-sensitive.
+Napisz program czytający plik i zapisujący w osobnym pliku słowa, które nie występują w '/usr/share/dict/words'. 
+Sprawdzanie nie powinno być case-sensitive.
 -}
 
 import System.IO
