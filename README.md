@@ -6,4 +6,4 @@
 | ![lab04](https://github.com/AdamKlekowski/AGH_Functional_Programming/tree/master/lab04) | Typy i Monady |
 | ![lab05](https://github.com/AdamKlekowski/AGH_Functional_Programming/tree/master/lab05) | Haskell IO |
 | ![lab06](https://github.com/AdamKlekowski/AGH_Functional_Programming/tree/master/lab06) | Monady |
-| ![---](https://github.com/AdamKlekowski/AGH_Functional_Programming/tree/master/HUnit) | HUnit |
+| ![     ](https://github.com/AdamKlekowski/AGH_Functional_Programming/tree/master/HUnit) | HUnit |
