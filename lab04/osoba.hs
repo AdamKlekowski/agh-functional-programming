@@ -16,10 +16,15 @@ data Osoba = Osoba {
     imie:: String, 
     nazwisko:: String, 
     pesel:: String
-    } deriving (Show)
+    }
     
 instance Eq Osoba where
     a == b = pesel a == pesel b
 
 instance Ord Osoba where
-    compare a b = compare (pesel a) (pesel b)
+    compare a b = compare (nazwisko a) (nazwisko b)
+
+instance Show Osoba where
+    show a = show (imie a) ++ show (nazwisko a) ++ show (pesel a)
+
+
