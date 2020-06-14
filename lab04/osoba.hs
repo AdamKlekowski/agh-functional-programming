@@ -1,5 +1,7 @@
 {-
-Zbuduj nowy typ Osoba, zawierający imię, nazwisko, pesel. Napisz typeclase umożliwiającą porównywanie osób (po peselu) i sortowanie po nazwisku. Czy da się wyświetlić osobę? Co gdyby dziedziczyć po Eq i Ord? Jak zachowywałoby się porównywanie ==,<=? Poniższe powinny działać poprawnie:
+Zbuduj nowy typ Osoba, zawierający imię, nazwisko, pesel. Napisz typeclase umożliwiającą porównywanie osób (po peselu) 
+i sortowanie po nazwisku. Czy da się wyświetlić osobę? Co gdyby dziedziczyć po Eq i Ord? 
+Jak zachowywałoby się porównywanie ==,<=? Poniższe powinny działać poprawnie:
 
 	let adam = Osoba "Adam" "Klekowski" "123456789"
 	let klekowski = Osoba "A" "Klekowski"  "123456789"
